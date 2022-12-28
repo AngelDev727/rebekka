@@ -8,20 +8,24 @@
 
 import Foundation
 
-/** The base class for read stream operations. */
-internal class ReadStreamOperation: StreamOperation {
+/// The base class for read stream operations.
+class ReadStreamOperation: StreamOperation {
     
-    internal lazy var temporaryBuffer: UnsafeMutablePointer<UInt8> = {
+    lazy var temporaryBuffer: UnsafeMutablePointer<UInt8> = {
         return UnsafeMutablePointer<UInt8>.allocate(capacity: 1024)
     }()
     
     lazy var readStream: InputStream = {
-        let cfStream = CFReadStreamCreateWithFTPURL(nil, self.fullURL() as CFURL)
+        guard let url = fullURL else {
+            return InputStream()
+        }
+        
+        let cfStream = CFReadStreamCreateWithFTPURL(nil, url as CFURL)
         CFReadStreamSetDispatchQueue(cfStream.takeUnretainedValue(), self.queue)
         return cfStream.takeRetainedValue()
     }()
     
     override func start() {
-        self.startOperationWithStream(self.readStream)
+        startOperationWithStream(readStream)
     }
 }

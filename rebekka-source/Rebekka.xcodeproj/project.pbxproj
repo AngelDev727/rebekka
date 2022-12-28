@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47179B801B1352FD00CAFD6D /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B7F1B1352FD00CAFD6D /* Operation.swift */; };
+		47179B801B1352FD00CAFD6D /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B7F1B1352FD00CAFD6D /* BaseOperation.swift */; };
 		47179B821B13530A00CAFD6D /* StreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B811B13530A00CAFD6D /* StreamOperation.swift */; };
 		47179B841B13539700CAFD6D /* ReadStreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B831B13539700CAFD6D /* ReadStreamOperation.swift */; };
 		47179B861B1353A500CAFD6D /* WriteStreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B851B1353A500CAFD6D /* WriteStreamOperation.swift */; };
@@ -15,7 +15,7 @@
 		47179B8B1B13543B00CAFD6D /* FileDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B8A1B13543B00CAFD6D /* FileDownloadOperation.swift */; };
 		47179B8F1B13549000CAFD6D /* FileUploadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B8E1B13549000CAFD6D /* FileUploadOperation.swift */; };
 		47179B911B1354B200CAFD6D /* DirectoryCreationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B901B1354B200CAFD6D /* DirectoryCreationOperation.swift */; };
-		47179B921B1354FB00CAFD6D /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B7F1B1352FD00CAFD6D /* Operation.swift */; };
+		47179B921B1354FB00CAFD6D /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B7F1B1352FD00CAFD6D /* BaseOperation.swift */; };
 		47179B931B1354FB00CAFD6D /* StreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B811B13530A00CAFD6D /* StreamOperation.swift */; };
 		47179B941B1354FB00CAFD6D /* WriteStreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B851B1353A500CAFD6D /* WriteStreamOperation.swift */; };
 		47179B951B1354FB00CAFD6D /* FileUploadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B8E1B13549000CAFD6D /* FileUploadOperation.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47179B7F1B1352FD00CAFD6D /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		47179B7F1B1352FD00CAFD6D /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
 		47179B811B13530A00CAFD6D /* StreamOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamOperation.swift; sourceTree = "<group>"; };
 		47179B831B13539700CAFD6D /* ReadStreamOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadStreamOperation.swift; sourceTree = "<group>"; };
 		47179B851B1353A500CAFD6D /* WriteStreamOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteStreamOperation.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		47179B871B1353AA00CAFD6D /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				47179B7F1B1352FD00CAFD6D /* Operation.swift */,
+				47179B7F1B1352FD00CAFD6D /* BaseOperation.swift */,
 				47179B811B13530A00CAFD6D /* StreamOperation.swift */,
 				47179B8D1B13545000CAFD6D /* Write */,
 				47179B8C1B13544600CAFD6D /* Read */,
@@ -194,16 +194,14 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Constantine Fry";
 				TargetAttributes = {
 					47FFC2821B09279200D3EDFE = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0800;
 					};
 					47FFC2DB1B09297E00D3EDFE = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -212,6 +210,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 47FFC2581B0926C600D3EDFE;
@@ -283,7 +282,7 @@
 				47179B841B13539700CAFD6D /* ReadStreamOperation.swift in Sources */,
 				47179B861B1353A500CAFD6D /* WriteStreamOperation.swift in Sources */,
 				47179B821B13530A00CAFD6D /* StreamOperation.swift in Sources */,
-				47179B801B1352FD00CAFD6D /* Operation.swift in Sources */,
+				47179B801B1352FD00CAFD6D /* BaseOperation.swift in Sources */,
 				47179B891B13541600CAFD6D /* ResourceListOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +297,7 @@
 				47179B981B1354FB00CAFD6D /* ResourceListOperation.swift in Sources */,
 				47179B941B1354FB00CAFD6D /* WriteStreamOperation.swift in Sources */,
 				47179B931B1354FB00CAFD6D /* StreamOperation.swift in Sources */,
-				47179B921B1354FB00CAFD6D /* Operation.swift in Sources */,
+				47179B921B1354FB00CAFD6D /* BaseOperation.swift in Sources */,
 				47179B951B1354FB00CAFD6D /* FileUploadOperation.swift in Sources */,
 				47179B991B1354FB00CAFD6D /* FileDownloadOperation.swift in Sources */,
 			);
@@ -315,23 +314,13 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -374,23 +363,13 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -410,7 +389,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -442,7 +420,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -464,7 +442,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -472,7 +450,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -489,8 +466,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -498,7 +474,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -510,8 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.fry.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

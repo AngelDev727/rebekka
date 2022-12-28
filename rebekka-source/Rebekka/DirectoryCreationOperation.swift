@@ -8,7 +8,7 @@
 
 import Foundation
 
-/** Operation for directory creation. */
-internal class DirectoryCreationOperation: WriteStreamOperation {
+/// Operation for directory creation.
+class DirectoryCreationOperation: WriteStreamOperation {
     
 }
